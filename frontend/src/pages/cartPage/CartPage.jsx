@@ -60,6 +60,16 @@ const CartPage = () => {
       <Navbar />
       <main className="cart-container">
         <h2>Din Kundvagn</h2>
+         {/* visa error meddelande om user kunde inte skapa konto */}
+         {errors.length > 0 && (
+            <ul>
+              {errors.map((err, index) => (
+                <li key={index} className="error">
+                  {err.message}
+                </li>
+              ))}
+            </ul>
+          )}
         {cart.length > 0 ? (
           <>
             {cart.map((item, index) => (

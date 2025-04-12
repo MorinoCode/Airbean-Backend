@@ -1,0 +1,55 @@
+/* StatusPage.css */
+.statusContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .statusContainer p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .statusContainer h3 {
+    font-size: 22px;
+    margin: 15px 0;
+    color: #007bff;
+  }
+  
+  .statusContainer img {
+    width: 150px;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  .error {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .order-history-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .order-history-btn:hover {
+    background-color: #0056b3;
+  }
+  

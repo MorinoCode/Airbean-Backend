@@ -1,0 +1,49 @@
+.order-history-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.order-info {
+  font-size: 16px;
+  color: #333;
+}
+
+.order-info p {
+  margin: 5px 0;
+}
+
+.order-items {
+  margin-top: 15px;
+}
+
+.order-items ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-items li {
+  margin: 5px 0;
+}
+
+.view-details-btn {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.view-details-btn:hover {
+  background-color: #0056b3;
+}
+.toggle-details-btn{
+  background-color: #b5d8a4;
+  padding: .3rem 1rem;
+  border-radius: 1rem;
+
+}

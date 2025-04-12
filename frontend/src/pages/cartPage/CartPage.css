@@ -1,0 +1,21 @@
+.cart-container {
+    padding: 20px;
+    text-align: center;
+  }
+.checkout-btn{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  padding: 1rem;
+  cursor: pointer;
+  
+}
+.cart-total{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.checkout-btn:hover{
+  color: gold;
+}

@@ -1,0 +1,47 @@
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .quantity-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  
+  
+  .increase-btn {
+    background-color: greenyellow;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .decrease-btn{
+    background-color: red;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .increase-btn:hover{
+    background-color: rgb(200, 245, 132);
+  }
+  .decrease-btn:hover{
+    background-color: rgb(244, 135, 135);
+  }
+  

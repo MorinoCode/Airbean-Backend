@@ -1,0 +1,62 @@
+/* LoginPage.css */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-container label {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .login-container input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login-container button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #6f4e37; /* Kaffebrun färg */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .login-container button:hover {
+    background-color: #5a3d2b;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  .success{
+    color: green;
+    margin-top: 5px;
+    font-weight: bold;
+  }

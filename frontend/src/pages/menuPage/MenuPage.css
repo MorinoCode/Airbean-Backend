@@ -1,0 +1,11 @@
+.menu-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .menu-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  

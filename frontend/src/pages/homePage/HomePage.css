@@ -1,0 +1,21 @@
+.home-content {
+    text-align: center;
+    padding: 40px;
+  }
+  
+
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .coffee-img {
+    width: 170px;
+    border-radius: 10px;
+    margin-top: 20px;
+    animation: float 3s ease-in-out infinite;
+    cursor: pointer;
+  }
+  

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState ,useEffect} from "react";
 import { MyContext } from "../../App";
 import "./LoginPage.css";
 import Navbar from "../../components/navbar/Navbar";
@@ -13,6 +13,10 @@ const LoginPage = () => {
   const [success, setSuccess] = useState("");
   const navigate = useNavigate();
   const {user, setUser} = useContext(MyContext);
+
+
+
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();

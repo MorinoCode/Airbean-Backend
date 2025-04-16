@@ -14,7 +14,7 @@ const forgotPasswordMiddleware = async (req, res, next) => {
     if (!foundedUser) {
       return res.status(400).json([{ message: "Email address är inte registrerad" }]);
     }
-    console.log(foundedUser);
+    
 
     // Skapa ett nytt slumpmässigt lösenord
     const newPassword = '12345Password'

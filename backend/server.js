@@ -5,9 +5,9 @@ import connectDB from "./configs/connectDB.js";
 import cors from 'cors'
 
 //import middleware
-import userRouter from "./routes/userRouter.js";
-import menuRouter from "./routes/menuRouter.js";
-import orderRouter from "./routes/orderRouter.js";
+import userRouter from "./controller/userRouter.js";
+import menuRouter from "./controller/menuRouter.js";
+import orderRouter from "./controller/orderRouter.js";
 
 
 

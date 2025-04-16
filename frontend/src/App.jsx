@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import HomePage from './pages/homePage/Homepage';
 import SignupPage from './pages/signupPage/SignupPage';
 import AboutPage from "./pages/aboutPage/AboutPage"; 
@@ -21,10 +21,20 @@ const App = () => {
   const [orders, setOrders] = useState([])
   const [order, setOrder] = useState([])
   const [totalPrice, setTotalPrice] = useState([])
+  const navigate = useNavigate()
+
+  // Kontrollera om användaren är inloggad via localStorage
+    useEffect(() => {
+      const storedUser = localStorage.getItem('user');
+      if (storedUser) {
+        setUser(JSON.parse(storedUser));  // Återställ användarinformationen från localStorage
+        navigate('/');  // Om användaren redan är inloggad, navigera till startsidan
+      }
+    }, [setUser, navigate]);
 
   
   return (
-    <BrowserRouter>
+   
      <MyContext.Provider value={{ user, setUser , menu, setMenu, cart, setCart ,totalPrice, setTotalPrice, orders, setOrders,order, setOrder}}>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -38,7 +48,7 @@ const App = () => {
         <Route path="/forgottPassword" element={<ForgotPassPage />} />
       </Routes>
       </MyContext.Provider>
-    </BrowserRouter>
+    
   );
 };
 

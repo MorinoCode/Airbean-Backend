@@ -11,7 +11,7 @@ const signupMiddleware = async (req, res, next) => {
 
     // om user valideras inte
     if (isUserValid !== true) {
-      res.status(400).json(isUserValid);
+      return res.status(400).json(isUserValid);
     }
 
     //kontrollera om user redan finns i Db
@@ -19,7 +19,7 @@ const signupMiddleware = async (req, res, next) => {
 
     // om user hittas
     if (isUserExist) {
-      res.status(400).json([{ message: "User är redan registered" }]);
+     return res.status(400).json([{ message: "User är redan registered" }]);
     }
 
     //innan vi skapa konto för user då hasha vi passwordet

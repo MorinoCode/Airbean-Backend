@@ -17,10 +17,10 @@ const orderSchema = new Schema({
     type: String,
     required: true,
   },
-  user : {
-    type :String,
+  user: {
+    type: String,
     required: true,
-  }
+  },
 });
 
 const orderModel = mongoose.model("order", orderSchema);

@@ -3,8 +3,8 @@ import mongoose, { Schema } from "mongoose";
 const userSchema = new Schema({
   email: {
     type: String,
-    required: [true, "Email är obligatorisk"],
-    unique: [true, "Email address är redan registerad"],
+    required: [true, "Email är obligatoriskt"],
+    unique: [true, "Email addressen är redan registerad"],
     match: [
       /^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/,
       "Email addres är inte giltigt",
@@ -13,9 +13,9 @@ const userSchema = new Schema({
   password: {
     type: String,
     required: true,
-    minLength: [5, "Password är for kort"],
+    minLength: [5, "Lösenord är för kort"],
     maxLenght: 150,
-    match: [/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).+$/, "Password är inte giltigt"],
+    match: [/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).+$/, "Lösenord är inte giltigt"],
   },
 });
 

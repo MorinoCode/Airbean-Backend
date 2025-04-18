@@ -33,7 +33,7 @@ const loginMiddleware = async (req, res, next) => {
     const token = jwt.sign(
       { email: foundedUser.email },
       process.env.SECRET_KEY,
-      { expiresIn: "60m" }
+      { expiresIn: "70m" }
     );
 
     res.status(200).json([{ message: `${foundedUser.email} loggade in`, user: foundedUser , token}]);

@@ -22,19 +22,21 @@ const schema = {
     type: "number",
     required: true,
     messages: {
-      required: "totalPris är obligatorisk",
+      required: "TotalPris är obligatorisk",
     },
   },
   user: {
     type: "string",
     required: true,
     messages: {
-      required: "user är obligatorisk",
+      required: "User är obligatorisk",
     },
 },
 };
 
 const validate = v.compile(schema);
+
+// skickar bara dem error meddelande som behövs
 const validatAndSanitizeOrder = (data) => {
   const result = validate(data);
   if (result !== true) {
